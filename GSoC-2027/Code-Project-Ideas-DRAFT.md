@@ -74,19 +74,28 @@ The proposal should address each of these areas.
 #### Add connection parameter `ike-sa-init-full-transcript-auth=...` to keywords
 
 This should be boiler plate code adding the field to host_config in
-connections.h et.al.
-
-Functionality (minimum):
+connections.h et.al.  Acceptable values are:
 
 - auto - negotiate
 - no - do not negotiate
 - yes - require
 
-Commits (minimum):
+Commits:
 
-- keyword addition
+- parameter addition
+
+  Since there is no code behind the parameter, the default is `no.
+
 - documentation addition
+
+  Since there is no code behind the parameter, the final text is
+  prefixed with a caution that this is experimental and disabled.
+
 - addconn-NN- test demonstrating value reaching pluto
+
+  i.e., yes, no, auto
+
+- bug to update parameter default and documentation
 
 Exension: add additional keywords (no clue what) to specify
 
