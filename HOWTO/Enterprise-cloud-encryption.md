@@ -34,9 +34,8 @@ options to allow for different service levels. For example, it is
 possible to insist that some network ranges always have encryption, or
 never have encryption. Or encryption to some networks can be optional.
 
-{{ ambox \| nocat=true \| type=speedy \| text = The methods of
-configuring various aspects of Opportunistic IPsec are still subject to
-change }}
+> [!CAUTION]
+> The methods of configuring various aspects of Opportunistic IPsec are still subject to change.
 
 # The basic configuration
 
