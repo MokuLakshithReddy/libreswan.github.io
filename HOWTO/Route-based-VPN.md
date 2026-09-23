@@ -4,8 +4,9 @@ device. There will be an ipsec1 device where you can add routes or
 
 ## Route-based VPNs using libreswan XFRM device
 
-{{ ambox \| nocat=true \| type=speedy \| text = XFRMi support is
-EXPERIMENTAL and the API and keywords are subject to change }}
+> [!NOTE]
+> XFRMi support is EXPERIMENTAL and the API and keywords are subject
+> to change.
 
 By default Libreswan set up IPseec/VPN tunnels using IPsec policy alone,
 without "ip routing". On Linux systems this is called a policy-based VPN
@@ -30,8 +31,9 @@ instead of adding or modifying IPsec policies*. While libreswan
 supported route based VPN with KLIPS using the ipsec0 interface, as of
 libreswan-3.30, adds support using the Linux XFRMi device.
 
-{{ ambox \| nocat=true \| type=warning \| text = XFRMi support requires
-libreswan-3.30_rc or later and a linux-4.19.x kernel or later.}}
+> [!WARNING]
+> XFRMi support requires libreswan-3.30_rc or later and a linux-4.19.x
+> kernel or later.
 
 An additional advantage of using libreswan with XFRM is that you have a
 real network device (unlike the *nflogXX* interface) that supports

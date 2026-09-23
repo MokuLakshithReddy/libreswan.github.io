@@ -156,11 +156,12 @@ are best left unset when using libreswan as a server, so that Main Mode
 is used. When connecting to a Cisco with libreswan as a client, you will
 need to use rightid=@String and aggrmode=yes.
 
-{{ ambox \| nocat=true \| type=speedy \| text = iOS UserInterface bug:
-If you ever fill in the "Group Name" and then clear it - the connection
-remains using Aggressive Mode. If you want to use Main Mode your only
-choice is to delete the VPN profile and start one from scratch where you
-never touch the "Group Name" input box. }}
+> [!NOTE]
+> iOS UserInterface bug: If you ever fill in the "Group Name" and then
+> clear it - the connection remains using Aggressive Mode. If you want
+> to use Main Mode your only choice is to delete the VPN profile and
+> start one from scratch where you never touch the "Group Name" input
+> box.
 
 ## User/password authentication for XAUTH on the server
 

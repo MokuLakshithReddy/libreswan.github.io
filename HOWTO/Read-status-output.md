@@ -125,9 +125,9 @@ IPsec SA will list its IKE SA state number as "isakmp#XXX".
 If the state claims "established", it means that it is fully up and
 running.
 
-{{ ambox \| nocat=true \| type=important \| text = In IKEv1, the phase1
-states are either MAIN MODE or AGGRESSIVE MODE states and the phase2
-states are QUICK_MODE states }}
+> [!IMPORTANT]
+> In IKEv1, the phase1 states are either MAIN MODE or AGGRESSIVE MODE
+> states and the phase2 states are QUICK_MODE states.
 
 In IKEv2, the IKE states are called PARENT SA and the IPsec states are
 called CHILD SA.
@@ -156,9 +156,9 @@ refhim=0 Traffic:
 
 Here, state number 50577 is the IKE SA, and state 50578 is the IPsec SA.
 
-{{ ambox \| nocat=true \| type=important \| text = The Child SA (#50578)
-in IKEv2 mistakenly calls itself a a PARENT SA. This is a known (but
-harmless) bug }}
+> [!IMPORTANT]
+> The Child SA (#50578) in IKEv2 mistakenly calls itself a a PARENT
+> SA.  This is a known (but harmless) bug.
 
 # ip xfrm
 
@@ -217,10 +217,10 @@ A more verbose version including traffic counters can be obtained using
 
 The corresponding xfrm state can be shown using *ip xfrm state* :
 
-{{ ambox \| nocat=true \| type=speedy \| text = This command actually
-shows the encryption/decryption and authentication private keys. Anyone
-who sees this output can decrypt all the traffic encrypted with these
-keys! }}
+> [!NOTE]
+> This command actually shows the encryption/decryption and
+> authentication private keys. Anyone who sees this output can decrypt
+> all the traffic encrypted with these keys!
 
     # ip xfrm state
     src 209.132.183.55 dst 76.10.157.68

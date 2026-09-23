@@ -67,8 +67,9 @@ iphone google authenticator application
 XAUTH only supports a username and password. To specify the OTP, you
 concatenate it after the password. There is no separator character.
 
-{{ ambox \| nocat=true \| type=important \| text = If you wish to
-support IPsec on phones, you cannot practically use Google Authenticator
-on that same phone. Apart from not really offering security, it's next
-to impossible to switch between the applications to get the OTP code
-into the password field of the VPN application. }}
+> [!IMPORTANT]
+> If you wish to support IPsec on phones, you cannot practically use
+> Google Authenticator on that same phone. Apart from not really
+> offering security, it's next to impossible to switch between the
+> applications to get the OTP code into the password field of the VPN
+> application. }}

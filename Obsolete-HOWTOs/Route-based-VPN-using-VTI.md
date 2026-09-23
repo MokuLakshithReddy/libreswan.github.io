@@ -16,10 +16,10 @@ this with KLIPS using the ipsec0 interface, when using XFRM/NETKEY this
 was not supported. As of libreswan-3.18, this is now supported using the
 Linux VTI interface and network MARKing.
 
-{{ ambox \| nocat=true \| type=warning \| text = VTI support requires
-libreswan-3.18 or later and a recent linux-3.x or 4.x kernel. The
-iproute package in Ubuntu 14.04 and 16.04 (and likely debian versions)
-has been reported to be too old }}
+> [!WARNING]
+> VTI support requires libreswan-3.18 or later and a recent linux-3.x
+> or 4.x kernel. The iproute package in Ubuntu 14.04 and 16.04 (and
+> likely debian versions) has been reported to be too old.
 
 An additional advantage of using libreswan with VTI is that you have a
 real interface (unlike the *nflogXX* interface) that supports
@@ -88,12 +88,13 @@ You can see information about vti tunnels using:
     ip -s tunnel show
     ifconfig vti01
 
-{{ ambox \| nocat=true \| type=important \| text = You can give a VTI
-interface any name you want as long as it is a valid network interface
-name (eg less than 16 characters). You can also pick any MARK number
-that you want. However, in the future, libreswan will likely use
-mark=50/0xffffff and vti-interface=ipsec0 to create a global VTI device,
-so it is best if administrators avoid these values }}
+> [!IMPORTANT]
+> You can give a VTI interface any name you want as long as it is a
+> valid network interface name (eg less than 16 characters). You can
+> also pick any MARK number that you want. However, in the future,
+> libreswan will likely use mark=50/0xffffff and vti-interface=ipsec0
+> to create a global VTI device, so it is best if administrators avoid
+> these values.
 
 ## Create a single VTI device for all VPN clients
 

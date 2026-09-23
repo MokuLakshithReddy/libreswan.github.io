@@ -30,12 +30,11 @@ generating X.509 certificates for this method.
   can be disabled, see
   [Interoperability#Windows_Certificate_requirements](/Interoperability#Windows_Certificate_requirements)
 
-{{ ambox \| nocat=true \| type=speedy \| text = Windows uses only
-insecure defaults for IKEv2. To interop with libreswan, you need to
-either specify a modp1024 based proposal or change the registry and add
-a DWORD
-HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rasman\Parameters\NegotiateDH2048_AES256
-}}
+> [!NOTE]
+> Windows uses only insecure defaults for IKEv2. To interop with
+> libreswan, you need to either specify a modp1024 based proposal or
+> change the registry and add a DWORD
+> `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rasman\Parameters\NegotiateDH2048_AES256`.
 
 ### ipsec.conf for IKEv2 Machine Certificate VPN server
 

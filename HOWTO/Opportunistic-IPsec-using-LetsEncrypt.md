@@ -7,9 +7,9 @@ TLS works. But with IPsec we get to encrypt every kind of traffic
 between the two hosts and not just those applications that support
 SSL/TLS.
 
-{{ ambox \| nocat=true \| type=warning \| text = This is an EXPERIMENTAL
-feature. Please send feedback to the swan-dev@lists.libreswan.org
-mailing list }}
+> [!WARNING]
+> This is an EXPERIMENTAL feature. Please send feedback to the
+> swan-dev@lists.libreswan.org mailing list.
 
 __TOC__
 

@@ -7,9 +7,9 @@ communications between any two host without requiring a trust
 relationship or preconfiguration. That is, the goal is to encrypt the
 entire internet.
 
-{{ ambox \| nocat=true \| type=speedy \| text = This feature is
-experimental - please ensure you have non-network console access to the
-machines you run Opportunistic IPsec on }}
+> [!NOTE]
+> This feature is experimental - please ensure you have non-network
+> console access to the machines you run Opportunistic IPsec on.
 
 **QUICKSTART:**
 
@@ -63,9 +63,9 @@ only setup for the hosts themselves. Since there is no method to
 securely convey ownership of a certain IP address, an Opportunistic
 IPsec host can never be trusted to talk on another IP's behalf.
 
-{{ ambox \| nocat=true \| type=information \| text = The libreswan-3.19
-release does not yet support IPv6. Support for this will be added to
-3.20 }}
+> [!INFORMATION]
+> The libreswan-3.19 release does not yet support IPv6. Support for
+> this will be added to 3.20.
 
 ## Types of Opportunistic Encryption
 

@@ -9,8 +9,9 @@ be two extra layers of packet encapsulation, a PPP layer and an L2TP
 layer. This can cause MTU issues, so usually the L2TP/IPsec client uses
 an MTU of 1200 for the ppp device that is created.
 
-{{ ambox \| nocat=true \| type=speedy \| text =While we document how to
-run an L2TP/IPsec server, we do not recommend this type of setup. }}
+> [!NOTE]
+> While we document how to run an L2TP/IPsec server, we do not
+> recommend this type of setup. }}
 
 # L2TP/IPsec based server
 

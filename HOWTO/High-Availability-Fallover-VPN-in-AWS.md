@@ -43,8 +43,8 @@ and addresses so it can help us in coming up with valid configurations.
 | ENI Subnet            | 172.16.0.0/24 |     |
 | ENI Subnet GW         | 172.16.0.254  |     |
 
-{{ ambox \| nocat=true \| type=important \| text = The config files will
-be using these example IP ranges }}
+> [!IMPORTANT]
+> The config files will be using these example IP ranges.
 
 ## AWS Configuration
 
@@ -90,8 +90,8 @@ interface if this check is not disabled. To disable, right-click on the
 newly created ENI and select “Change Source/Dest. Check”. It needs to be
 in the disabled state.
 
-{{ ambox \| nocat=true \| type=important \| text = Can we get some more
-explanation of why the default is wrong? }}
+> [!IMPORTANT]
+> Can we get some more explanation of why the default is wrong?
 
 ### Elastic IP’s
 
@@ -227,11 +227,11 @@ commands of each of the hosts. To install:
 
     # cp fence_ec2 /usr/sbin/fence_ec2
 
-{{ ambox \| nocat=true \| type=delete \| text = fence_ec2 is (was?)
-broken because AWS always returns "OK", even when the request to
-terminate an instance was queued, not completed. This can cause the HA
-system to go in "split-brain" mode where two or more nodes try to take
-control }}
+> [!TIP]
+> fence_ec2 is (was?)  broken because AWS always returns "OK", even
+> when the request to terminate an instance was queued, not
+> completed. This can cause the HA system to go in "split-brain" mode
+> where two or more nodes try to take control.
 
 #### eni
 
@@ -283,8 +283,8 @@ PSK](/HOWTO/Host-to-host-VPN-with-PSK)
 
 We will use this in our PSK files.
 
-{{ ambox \| nocat=true \| type=delete \| text = DO NOT USE THIS EXAMPLE
-PSK! }}
+> [!TIP]
+> DO NOT USE THIS EXAMPLE PSK!
 
 #### Config Files
 
@@ -350,8 +350,9 @@ command to configure and setup the cluster. More information on
 configuring the cluster can be found in the [Red Hat HA Administration
 Guide](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/High_Availability_Add-On_Administration/ch-startup-HAAA.html#s1-clusterinstall-HAAA)
 
-{{ ambox \| nocat=true \| type=notification \| text = It is assumed that
-the nodes have DNS entries which point to the appropriate hosts }}
+> [!NOTE]
+> It is assumed that the nodes have DNS entries which point to the
+> appropriate hosts.
 
 Do the following on **both** nodes:
 

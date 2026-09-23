@@ -386,9 +386,9 @@ important to pick an ESP algorithm that is fast. Currently, AES_GCM
 outperforms everything (including esp=null-md5 !!) so that should be the
 algorithm used when trying to use pcrypt.
 
-{{ ambox \| nocat=true \| type=speedy \| text = The pcrypt module is
-VERY UNSTABLE. Please be careful. If you have stability tips, please let
-us know at swan-dev@lists.libreswan.org }}
+> [!NOTE]
+> The pcrypt module is VERY UNSTABLE.  Please be careful. If you have
+> stability tips, please let us know at swan-dev@lists.libreswan.org.
 
 The documentation of the pcrypt / tcrypt module is very limited. The
 pcrypt module has to be enabled per algorithm:

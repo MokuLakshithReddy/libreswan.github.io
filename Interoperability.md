@@ -162,10 +162,10 @@ You can manually add it without restarting using:
 Next, you configure a "subnet" containing the elastic IP by setting
 leftsubnet=elasticip/32.
 
-{{ ambox \| nocat=true \| type=important \| text = Do not use the
-leftsourceip= option to automatically create the alias when using
-elastic IP's, or you will end up with broken route on your system
-preventing it from reaching the remote subnets. }}
+> [!IMPORTANT]
+> Do not use the leftsourceip= option to automatically create the
+> alias when using elastic IP's, or you will end up with broken route
+> on your system preventing it from reaching the remote subnets.
 
 Note that using an Elastic IP technically means that your AWS IPsec
 server is "behind NAT". Some Microsoft Windows operating systems need to

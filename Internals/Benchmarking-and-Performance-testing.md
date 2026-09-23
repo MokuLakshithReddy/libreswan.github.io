@@ -1,9 +1,9 @@
 The performance of an IPsec system depends on CPU, RAM, NICs, switches,
 kernel and configuration.
 
-{{ ambox \| nocat=true \| type=important \| text = All tests were
-performed using a network MTU setting of 9000 unless otherwise noted.
-This is crucial when using 10GigE cards!}}
+> [!IMPORTANT]
+> All tests were performed using a network MTU setting of 9000 unless
+> otherwise noted.  This is crucial when using 10GigE cards!
 
 Note that the settings of the NIC and the settings for Replay Protction
 (replay-window=) can greatly influence performance. It might be useful
@@ -70,9 +70,10 @@ distribute better) or have encrypted and unencrypted streams going.
 - two streams AES256-SHA1: 819 Mbits/sec plus 615 Mbits/sec (possibly
   was aes128)
 
-{{ ambox \| nocat=true \| type=important \| text = We were surprised
-that using an AEAD operation versus an NULL-ENCR+INTEG would cause such
-slowdown - use AES_GCM when you can!}}
+> [!IMPORTANT]
+> We were surprised that using an AEAD operation versus an
+> NULL-ENCR+INTEG would cause such slowdown - use AES_GCM when you
+> can!
 
 ### CPU/crypto performance measured with openssl
 
