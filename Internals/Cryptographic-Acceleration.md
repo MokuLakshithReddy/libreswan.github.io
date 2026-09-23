@@ -270,9 +270,10 @@ your kernel, for example for a 3.1 kernel use:
     cd linux-3.1
     patch -p1 < linux-3.1-ocf.patch
 
-{{ ambox \| type = alert \| text = For Linux 2.4 kernels on non-x86, you
-might need to issue: cp linux-2.X.x/include/asm-i386/kmap_types.h
-linux-2.X.x/include/asm-YYY }}
+> [!NOTE]
+> For Linux 2.4 kernels on non-x86, you might need to issue: cp
+> linux-2.X.x/include/asm-i386/kmap_types.h
+> linux-2.X.x/include/asm-YYY
 
 To compile userland applications with OCF support, the cryptodev.h file
 needs to be installed on the system, for example in
@@ -302,10 +303,11 @@ hardware driver, eg one of:
     modprobe ixp4xx
     ...
 
-{{ ambox \| type = alert \| text = You might wish to change
-_stackmanager to not load the cryptosoft module if you have native OCF
-hardware driver support. In some cases the software driver has
-accidentally gained preference over a hardware driver }}
+> [!NOTE]
+> You might wish to change _stackmanager_ to not load the cryptosoft
+> module if you have native OCF hardware driver support. In some cases
+> the software driver has accidentally gained preference over a
+> hardware driver.
 
 ### Debugging OCF
 

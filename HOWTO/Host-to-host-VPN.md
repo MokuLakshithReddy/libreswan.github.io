@@ -33,15 +33,16 @@ Repeat this on the other host, in our case east, using "right" instead
         # rsakey AwEAAesFf
         rightrsasigkey=0sAwEAAesFfVZqFzRA9F [...]
 
-{{ ambox \| type = alert \| text = On embedded hardware with low
-entropy, the process of generating a RSA new key can take minutes }}
+> [!NOTE]
+> On embedded hardware with low entropy, the process of generating a
+> RSA new key can take minutes.
 
-{{ ambox \| type = alert \| text = On older versions of libreswan, the
-newhostkey command had to be called with "--output
-/etc/ipsec.d/your.secret", and the main secrets files /etc/ipsec.secrets
-has an include statement for /etc/ipsec.d/\*.secret. On current
-libreswan versions, the secrets file(s) are only used for PSK's and
-XAUTH passwords. }}
+> [!NOTE]
+> On older versions of libreswan, the newhostkey command had to be
+> called with "--output /etc/ipsec.d/your.secret", and the main
+> secrets files /etc/ipsec.secrets has an include statement for
+> /etc/ipsec.d/\*.secret. On current libreswan versions, the secrets
+> file(s) are only used for PSK's and XAUTH passwords.
 
     # /etc/ipsec.conf
 
